@@ -19,19 +19,19 @@ Indicates that the server transfers informtion in a standard format
     - For example: 
         - which parser to invoke may be specified by an internet mediatype ([MIME Type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types))
 - Responses should also indicate their cache-ability
-- Use  [Standard MIME Types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types) and RDF vocabulary to make a message self-descriptive
+- Use  Standard MIME Types and RDF vocabulary to make a message self-descriptive
 
 # Hypermedia as the engine of application state (AKA HATEOAS)
 
 - Having accessed an initial URI for the REST application, a REST client should then be able to use server-provided links dynamically to discover all the avilable resources it needs
     - Meaning: As access proceeds -> the server responds with the text that includes hyperlinks to other resources that are currently available
-- Clients:
+- **Clients**:
     - Deliver State via: 
         - body contents
         - query-string parameters
         - request headers
         - the requested URI (The Resource Name)
-- Services:
+- **Services**:
     - Deliver State to Clients via: 
         - Response Headers
         - Response Codes
@@ -40,5 +40,5 @@ Indicates that the server transfers informtion in a standard format
 
 ### Sources
 
-https://stackoverflow.com/questions/25172600/rest-what-exactly-is-meant-by-uniform-interface
-http://en.wikipedia.org/wiki/Representational_state_transfer#Uniform_interface
+- https://stackoverflow.com/questions/25172600/rest-what-exactly-is-meant-by-uniform-interface
+- http://en.wikipedia.org/wiki/Representational_state_transfer#Uniform_interface
