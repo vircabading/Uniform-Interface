@@ -11,7 +11,42 @@ Indicates that the server transfers information in a standard format
 
 # Identification of Resources
 
+## restfulapi.net:
+
+- "A resource is a conceptual mapping to a set of entities, not the entity that corresponds to the mapping at any particular point in time." --Roy Fielding’s dissertation
+
+- "The interface must uniquely identify each resource involved in the interaction between the client and the server.
+- "As the constraint name itself applies, you MUST decide APIs interface for resources inside the system which are exposed to API consumers and follow it religiously. A resource in the system should have only one logical URI, and that should provide a way to fetch related or additional data. It’s always better to synonymize a resource with a web page."
+
+## wikipedia:
+
+- "Individual resources are identified in requests, for example using URIs in web-based REST systems. The resources themselves are conceptually separate from the representations that are returned to the client. For example, the server may send data from its database as HTML, XML or JSON, none of which are the server's internal representation, and it is the same one resource regardless."
+
+## rando on stackoverflow;
+
+- "You use the URI (IRI) standard to identify a resource. In this case, a resource is a web document.
+
+
+## tl:dr: 
+
+- Follow the URI guidelines strictly to allow api consumers to interact easily
+
 # Manipulation of Resources through these representations
+
+## restfulapi.net:
+
+- "The resources should have uniform representations in the server response. API consumers should use these representations to modify the resource state in the server."
+
+- ex: When returning a collection resource, include only the most important information about that resource. This will keep the size of the response payload small, and so will improve the performance of the API. Opposite to collection URI, a single resource URI includes complete information about a particular device. It also includes a list of links to sub-resources and other supported operations. This will make your REST API HATEOAS driven.
+
+## wikipedia:
+
+- "When a client holds a representation of a resource, including any metadata attached, it has enough information to modify or delete the resource."
+
+
+## tl:dr: 
+
+- keep your resource representations consistent, and have them contain necessary information to act upon them
 
 # Self-Descriptive Messages
 
@@ -42,3 +77,7 @@ Indicates that the server transfers information in a standard format
 
 - https://stackoverflow.com/questions/25172600/rest-what-exactly-is-meant-by-uniform-interface
 - http://en.wikipedia.org/wiki/Representational_state_transfer#Uniform_interface
+- https://restfulapi.net/
+- https://restfulapi.net/resource-naming/
+- https://restfulapi.net/rest-api-design-tutorial-with-example/
+- https://stackoverflow.com/questions/25172600/rest-what-exactly-is-meant-by-uniform-interface
