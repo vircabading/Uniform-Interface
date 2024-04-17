@@ -1,6 +1,6 @@
  # Uniform Interface
 
-Indicates that the server transfers informtion in a standard format
+Indicates that the server transfers information in a standard format
 
 # Four Guiding principles of interface are:
 
