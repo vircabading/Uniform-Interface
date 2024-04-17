@@ -19,7 +19,7 @@ Indicates that the server transfers informtion in a standard format
     - For example: 
         - which parser to invoke may be specified by an internet mediatype ([MIME Type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types))
 - Responses should also indicate their cache-ability
-- Use  Standard MIME Types and RDF vocabulary to make a message self-descriptive
+- Use  Standard MIME Types and [RDF vocabulary](https://www.w3schools.com/xml/xml_rdf.asp#:~:text=RDF%20Example&text=xml%20version%3D%221.0%22%3F%3E,-%3Crdf%3ARDF&text=The%20first%20line%20of%20the,%2Dsyntax%2Dns%23%22.) to make a message self-descriptive
 
 # Hypermedia as the engine of application state (AKA HATEOAS)
 
